@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Landing Page responsiva">
+    <meta name="keywords" content="tela de login, landing page">
     <title>Landing Page</title>
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="/styles/fonts.css">
@@ -15,14 +17,15 @@
             <h1>Marketing</h1>
             <h1>Criativo</h1>
         </div>
-
-        <ul>
-            <a href="#"><li>Início</li></a>
-            <a href="#"><li>Serviços</li></a>
-            <a href="#"><li>Sobre</li></a>
-            <a href="#"><li>Contato</li></a>
-            <a id="inscreva-se-bnt" href="#"><li>Já tem uma conta?</li></a>
-        </ul>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a id="bnt-account" href="#">Já tem uma conta?</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -31,15 +34,14 @@
             <h2>na Newslatter</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta quisquam quidem expedita nobis dolore nesciunt sequi consectetur eveniet cupiditate harum cum, omnis unde id consequuntur repudiandae ea dignissimos, deleniti aut.</p>
             <form>
-                <input type="text" placeholder="Nome">
-                <input type="email" placeholder="Email">
-                <input type="submit" value="Enviar >">
+                <input type="text" placeholder="Nome" maxlength="60" required>
+                <input type="email" placeholder="Email" maxlength="40" required>
+                <input type="submit" value="Enviar">
             </form>
         </aside>
         <article>
-            <img src="/components/images/img.png" alt="mulher-roxa">
+            <img src="/components/images/meditation.png" alt="purple-woman">
         </article>
-        
     </main>
 </body>
 </html>

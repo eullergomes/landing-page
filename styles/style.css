@@ -1,31 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box
+}
+
 body{
     background: rgb(34, 34, 34);
     color: white;
     font-family: poppinsregular;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 15px;
+    font-size: medium;
 }
 
 header{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    height: 120px;
 }
 
-#title{
-    flex-direction: column;
-    line-height: 10px;
+h1{
+    font-weight: 200;
+    line-height: 28px;
 }
 
-li{
-    display: inline-block;
-    margin: 20px;
+h1:hover{
+    cursor: pointer;
 }
 
 a{
-    color: white;
+    text-decoration: none;
+    color: #fff;
 }
 
 a:hover{
@@ -33,51 +40,74 @@ a:hover{
     transition: 0.3s all;
 }
 
-#inscreva-se-bnt{
-    border: 2px solid rgb(132, 14, 201);
-    padding: 10px;
-    border-radius: 15px;
+ul{
+    display: flex;
 }
 
-#inscreva-se-bnt:hover{
+li{
+    list-style-type: none;
+    padding: 20px;
+}
+
+#bnt-account{
+    border: 2px solid rgb(132, 14, 201);
+    border-radius: 15px;
+    padding: 15px 20px;
+}
+
+#bnt-account:hover{
     background: rgb(132, 14, 201);
     color: white;
 }
 
-h1{
-    font-weight: 200;
-}
-
 main{
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
     margin-top: 50px;
 }
 
-h2{
-    font-size: 56px;
-    line-height: 10px;
+aside{
+    flex: 50%;
+    /* border: 1px solid red; */
+}
+
+aside h2{
+    font-size: 3.6em;
     font-family: poppinsmedium;
 }
 
 span{
-    color: rbb(132, 14, 201);
+    color: rgb(132, 14, 201);
 }
 
-p{
-    line-height: 20px;
-    max-width: 500px;
+aside p{
+    margin-top: 18px;
+    margin-bottom: 18px;
+    font-size: 1.2em;
+}
+
+article{
+    flex: 50%;
+    /* border: 1px solid blue; */
+}
+
+aside p{
     font-family: poppinlight;
-}
-
-img{
-    width: 600px;
 }
 
 form{
     display: flex;
     flex-direction: column;
     width: 70%;
+}
+
+input{
+    margin-top: 20px;
+    padding: 18px;
+    border-radius: 20px;
+    font-size: 15px;
 }
 
 form [type="submit"]{
@@ -88,15 +118,7 @@ form [type="submit"]{
     font-weight: bold;
 }
 
-form [type="sumbmit"]:hover{
+form [type="submit"]:hover{
     cursor: pointer;
-}
-
-input{
-    margin-top: 20px;
-    height: 20px;
-    padding: 15px;
-    border-radius: 20px;
-    border: none;
-    font-size: 15px;
+    opacity: 0.9;
 }
