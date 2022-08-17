@@ -1,48 +1,60 @@
-/* Smartphones (600px para baixo) */
-@media only screen and (max-width: 600px) {
-	/*PROPRIEDADES*/
+@media only screen and (max-width: 700px) {
+	nav{
+        display: none;
+    }
+    #header-tit{
+        margin-bottom: 0px;
+    }
 }
 
-/* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
-@media only screen and (max-width: 600px) {
-	/*PROPRIEDADES*/
-}
-
-/*Dispostivos Médios (Tablets deitados, 768px para cima) */
-@media only screen and (max-width: 768px) {
-	/*PROPRIEDADES*/
-}
-
-/* Dispostivos Largos (laptops/desktops, 992px para cima) */
-@media only screen and (max-width: 992px) {
-	/*PROPRIEDADES*/
-}
-
-/* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
-@media only screen and (max-width: 1200px) {
-	header{
-        flex-direction: column;
+@media only screen and (max-width: 860px) {
+    #p-lorem{
+        margin-right: 5em;
+        margin-left: 5em;
+        margin-bottom: 2em;
+    }
+    aside form{
+        width: 50%;
     }
     #title{
-        margin-top: 30px;
-        margin-bottom:10px;
+        margin-bottom: 0px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    
+    header{
+        flex-direction: column;
+        margin-bottom:10em;
+    }
+
+    #title{
+        margin-top: 2em;
+        margin-bottom: 1em;
     }
     main{
         flex-direction: column;
-        margin-top: 200px;
     }
     aside{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    aside p{
-        width: 50%;
-        margin-top: 50px;
-        margin-bottom: 50px;
+    #newslatter{
+        margin-bottom: 0.5em;
     }
-    aside form{
-        width: 40%;
+
+    aside p{
+        margin-right: 10em;
+        margin-left: 10em;
+        margin-bottom: 2em;
+    }
+
+    form{
+        width: 35%;
+    }
+    article{
+        display: none;
     }
     
 }
